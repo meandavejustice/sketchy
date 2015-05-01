@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>chat</title>
+    <meta name="author" content="meandave">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/tachyons.min.css">
+    <style type="text/css" media="screen">
+      .messages {margin-bottom: 100px;}
+      .msg {list-style: none; padding: 5px;}
+      .msg p {display: inline;
+      padding: 0 10px;}
+      #pad {
+      border: 1px solid;
+      }
+      .entry {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h4 class="topic">Set the topic with "/topic whatever"</h4>
+    </header>
+    <ul class="messages"></ul>
+    <div class="entry">
+      <input id="color" type="color" name="" value="#23efa3" />
+      <input id="pixel" type="range" min="1" max="50" step="1" name="" value="8" />
+      <canvas id="pad" width="300" height="300"></canvas>
+    </div>
+    <!-- <input style="width:100%;" type="text" placeholder="enter message (/nick *change nickname* /me *emote* /bg *change the background*)" /> -->
+    <script type="text/javascript" src="bundle.js"></script>
+  </body>
+</html>
